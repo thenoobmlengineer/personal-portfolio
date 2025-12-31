@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Books and Movies – Your Name">
+  <title>Books & Movies – Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header and navigation -->
+  <header class="navbar">
+    <a href="index.html" class="brand">Abdul Ahad</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="books-movies.html" class="active">Books &amp; Movies</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+  </header>
+
+  <!-- Books & Movies Section -->
+  <section id="books-movies" class="container">
+    <h2>Books & Movies</h2>
+    
+    <div class="media-list">
+      <div class="media-item">
+        <img src="images/movie1.jpeg" alt="Movie 1 Poster" class="media-img">
+        <div class="media-description">
+          <h3>Shawshank Redemption</h3>
+          <p>This is a brief description of the movie. It explains the plot, actors, and why you love it.</p>
+        </div>
+      </div>
+
+      <div class="media-item">
+        <img src="images/book1.jpeg" alt="Book 1 Cover" class="media-img">
+        <div class="media-description">
+          <h3>Man's Search for Meaning</h3>
+          <p>Book written by Viktor Frankl, exploring the meaning of life and human suffering.</p>
+        </div>
+      </div>
+      
+      <!-- Add more items here as needed -->
+    </div>
+  </section>
+
+  <footer>
+    <p> <span id="year"></span> | Bug me at <a href="mailto:abdulahadshan4@gmail.com">abdulahadshan4@gmail.com</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

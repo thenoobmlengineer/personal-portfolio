@@ -1,0 +1,182 @@
+[
+    {
+        "title": "Killer Mountains",
+        "description": "A vibrant sunset captured in the foothills of the Himalayas.",
+        "date": "2025-10-15",
+        "image": "images/02.jpg"
+    },
+    {
+        "title": "Aqua Dreams",
+        "description": "Night cityscape with long exposure capturing light trails.",
+        "date": "2025-09-05",
+        "image": "images/01.jpg"
+    },
+    {
+        "title": "Tree of Life",
+        "description": "Aerial view of a bustling city during golden hour.",
+        "date": "2025-08-20",
+        "image": "images/03.jpg"
+    },
+    {
+        "title": "Feels like home",
+        "description": "Close-up of a blooming flower with dewdrops in the early morning.",
+        "date": "2025-07-30",
+        "image": "images/04.jpg"
+    },
+    {
+        "title": "Urban Jungle",
+        "description": "Black and white portrait capturing raw human emotion.",
+        "date": "2025-06-18",
+        "image": "images/05.jpg"
+    },
+    {
+        "title": "Serenity",
+        "description": "Macro shot of a butterfly on a vibrant flower.",
+        "date": "2025-05-10",
+        "image": "images/06.jpg"
+    },
+    {
+        "title": "Waves of Time",
+        "description": "Landscape of rolling hills under a dramatic sky.",
+        "date": "2025-04-22",
+        "image": "images/07.jpg"
+    },
+    {
+        "title": "City Lights",
+        "description": "Silhouette of a person against a colorful sunset.",
+        "date": "2025-03-15",
+        "image": "images/08.jpg"
+    },
+    {
+        "title": "Nature's Embrace",
+        "description": "Reflection of mountains in a calm lake during autumn.",
+        "date": "2025-02-28",
+        "image": "images/09.jpg"
+    },
+    {
+        "title": "Frozen Moments",
+        "description": "Snow-covered trees in a serene winter landscape.",
+        "date": "2025-01-10",
+        "image": "images/10.jpg"
+    },
+    {
+        "title": "Golden Pathway",
+        "description": "A winding path through a sunlit forest in autumn.",
+        "date": "2024-12-05",
+        "image": "images/11.jpg"
+    },
+    {
+        "title": "Desert Mirage",
+        "description": "Dunes under a clear blue sky with dramatic shadows.",
+        "date": "2024-11-20",
+        "image": "images/12.jpg"
+    },
+    {
+        "title": "Celestial Glow",
+        "description": "Starry night sky over a tranquil lake.",
+        "date": "2024-10-15",
+        "image": "images/13.jpg"
+    },
+    {
+        "title": "Urban Reflections",
+        "description": "City skyline reflected in a puddle after rain.",
+        "date": "2024-09-10",
+        "image": "images/14.jpg"
+    },
+    {
+        "title": "Wild Freedom",
+        "description": "A herd of wild horses running across an open field.",
+        "date": "2024-08-01",
+        "image": "images/15.jpg"
+    },
+    {
+        "title": "Misty Mornings",
+        "description": "Fog rolling over a quiet countryside at dawn.",
+        "date": "2024-07-18",
+        "image": "images/16.jpg"
+    },
+    {
+        "title": "Vibrant Streets",
+        "description": "Colorful street art on urban walls.",
+        "date": "2024-06-05",
+        "image": "images/17.jpg"
+    },
+    {
+        "title": "Calm Waters",
+        "description": "A serene beach scene with gentle waves at sunset.",
+        "date": "2024-05-22",
+        "image": "images/18.jpg"
+    },
+    {
+        "title": "Autumn Whisper",
+        "description": "Fallen leaves creating a natural carpet in the forest.",
+        "date": "2024-04-10",
+        "image": "images/19.jpg"
+    },
+    {
+        "title": "Sunlit Peaks",
+        "description": "Snow-capped mountains glowing under the morning sun.",
+        "date": "2024-03-01",
+        "image": "images/20.jpg"
+    },
+    {
+        "title": "Tropical Breeze",
+        "description": "Palm trees swaying against a bright blue sky.",
+        "date": "2024-02-14",
+        "image": "images/21.jpg"
+    },
+    {
+        "title": "City Pulse",
+        "description": "Busy urban street scene with motion blur of pedestrians.",
+        "date": "2024-01-05",
+        "image": "images/22.jpg"
+    },
+    {
+        "title": "Ethereal Light",
+        "description": "Sunbeams breaking through clouds over a mountain range.",
+        "date": "2023-12-20",
+        "image": "images/23.jpg"
+    },
+    {
+        "title": "Quiet Reflections",
+        "description": "A lone boat on a still lake at dawn.",
+        "date": "2023-11-10",
+        "image": "images/24.jpg"
+    },
+    {
+        "title": "Vast Horizons",
+        "description": "Endless desert landscape under a dramatic sky.",
+        "date": "2023-10-01",
+        "image": "images/25.jpg"
+    },
+    {
+        "title": "Lush Greenery",
+        "description": "Dense rainforest with sunlight filtering through the canopy.",
+        "date": "2023-09-15",
+        "image": "images/26.jpg"
+    },
+    {
+        "title": "Historic Charm",
+        "description": "Cobblestone street in a quaint European village.",
+        "date": "2023-08-05",
+        "image": "images/27.jpg"
+    },
+    {
+        "title": "Ocean's Embrace",
+        "description": "Waves crashing against rugged cliffs at sunset.",
+        "date": "2023-07-22",
+        "image": "images/28.jpg"
+    },
+    {
+        "title": "Blooming Beauty",
+        "description": "Field of wildflowers in full bloom under a clear sky.",
+        "date": "2023-06-10",
+        "image": "images/29.jpg"
+    },
+    {
+        "title": "Starry Night",
+        "description": "Milky Way stretching across the night sky over a desert landscape.",
+        "date": "2023-05-01",
+        "image": "images/30.jpg"
+    }
+]

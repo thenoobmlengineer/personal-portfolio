@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A personal portfolio built with HTML, CSS, and JavaScript to showcase my work.",
+    "date": "2025-12-20",
+    "tags": ["web development", "frontend"],
+    "image": "",
+    "link": "https://github.com/username/portfolio"
+  },
+  {
+    "title": "Photography App",
+    "description": "A mobile app that organises and edits photographs, providing intuitive filters and tagging.",
+    "date": "2025-11-05",
+    "tags": ["mobile", "photography"],
+    "image": "",
+    "link": "https://github.com/username/photography-app"
+  }
+]

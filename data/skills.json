@@ -1,0 +1,8 @@
+[
+  { "name": "JavaScript", "category": "Programming Languages", "level": "Advanced" },
+  { "name": "Python", "category": "Programming Languages", "level": "Advanced" },
+  { "name": "React", "category": "Frameworks", "level": "Intermediate" },
+  { "name": "Node.js", "category": "Frameworks", "level": "Intermediate" },
+  { "name": "Photography", "category": "Creative", "level": "Experienced" },
+  { "name": "Video Editing", "category": "Creative", "level": "Beginner" }
+]

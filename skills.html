@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Skills – Your Name">
+  <title>Skills – Your Name</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header and navigation -->
+  <header class="navbar">
+    <a href="index.html" class="brand">Abdul Ahad</a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="books-movies.html">Books &amp; Movies</a></li>
+      </ul>
+    </nav>
+    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode"></button>
+  </header>
+
+  <!-- Skills Section -->
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+
+    <div class="skill-category">
+      <h3>AI/ML & Deep Learning</h3>
+      <ul>
+        <li>Machine Learning (fundamentals and advanced)</li>
+        <li>Deep Learning</li>
+        <li>TensorFlow/Keras</li>
+        <li>Hugging Face Transformers</li>
+        <li>TinyML(edge Ai deployment)</li>
+        <li>Convolutional Neural Networks (CNNs)</li>
+        <li>Sequential Models</li>
+        <li>Transformer-based Models</li>
+        <li>Fine-tuning pre-trained models</li>
+        <li>Multimodal models (e.g., CLIP fine-tuning)</li>
+        <li>RAG (Retrieval-Augmented Generation) systems</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>AI Agents & Automation</h3>
+      <ul>
+        <li>AI Agents</li>
+        <li>N8N</li>
+        <li>LangChain</li>
+        <li>LangGraph</li>
+        <li>LangSmith</li>
+      </ul>
+    </div>
+    
+    <div class="skill-category">
+      <h3>Data Science & Signal/Image Processing</h3>
+      <ul>
+        <li>Biomedical Signal Processing</li>
+        <li>Medical Image Processing and Segmentation</li>
+        <li>NLP</li>
+        <li>Data Augmentation</li>
+        <li>NumPy, Pandas, Matplotlib (data handling and visualization)</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Other Tools & Technologies</h3>
+      <ul>
+        <li>PostgreSQL</li>
+        <li>Git (version control)</li>
+      </ul>
+    </div>
+
+    <div class="skill-category">
+      <h3>Emerging/niche Expertise</h3>
+      <ul>
+        <li>Brain-Computer Interfaces (BCI)</li>
+        <li>EEG-based neurofeedback systems</li>
+        <li>Neurosity Crown and Muse EEG headset integration</li>
+        <li>LSL</li>
+        <li>Brainflow</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p> <span id="year"></span> | Bug me at <a href="mailto:abdulahadshan4@gmail.com">abdulahadshan4@gmail.com</a></p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

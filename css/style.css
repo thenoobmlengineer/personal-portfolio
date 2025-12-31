@@ -1,0 +1,216 @@
+/* Global Stylesheet for the personal portfolio */
+
+/* Color Palette */
+:root {
+  --bg-color: #121212; /* Charcoal black (background) */
+  --text-color: #B0B0B0; /* Lighter grey (primary text) */
+  --secondary-text-color: #888888; /* Medium gray (secondary text) */
+  --border-color: #444444; /* Dark gray (borders and dividers) */
+  --accent-color: #888888; /* Soft gray (accents like links) */
+  --highlight-color: #76ABAE; /* Teal (minimal usage for highlights) */
+}
+
+/* Reset Body and HTML */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* General resets */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding-left: 60px; /* Balance the fixed social sidebar on desktop */
+}
+
+/* Navigation bar */
+header.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--bg-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid var(--border-color);
+}
+
+header.navbar .brand {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--highlight-color);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  padding-bottom: 0.25rem;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a.active {
+  color: var(--text-color);
+  border-bottom: 2px solid var(--highlight-color);
+}
+
+/* Social Media Icons Styling */
+.social-links {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.social-logo {
+  width: 20px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.social-logo:hover {
+  transform: scale(1.2);
+}
+
+/* About Section Styling */
+#about {
+  margin: 12rem 0 6rem; /* Increased top margin to push the section down */
+  padding: 2rem 0;
+  width: 100%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  padding: 0 2rem; /* Added padding to the left and right for better spacing */
+}
+
+.about-image {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.about-img {
+  width: 250px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+  text-align: left;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.about-me {
+  font-size: 1.0rem;
+  color: var(--highlight-color);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+  }
+
+  .social-links {
+    top: 80px;
+    left: 10px;
+    gap: 12px;
+  }
+
+  .social-logo {
+    width: 18px;
+  }
+
+  #about {
+    margin: 8rem 0 4rem; /* Still lower on mobile, but not extreme */
+    padding: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 0; /* Remove additional padding on mobile */
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 280px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-container {
+    gap: 4rem;
+  }
+}
+
+/* Blinking Cursor Animation - Fixed & Improved */
+.logo__cursor {
+  display: inline-block;
+  width: 3px;                    /* Thinner, more realistic cursor */
+  height: 1.4em;                 /* Matches the line height of the text (scales with font size) */
+  background-color: var(--highlight-color);  /* Use your teal accent instead of yellow for better visibility */
+  margin-left: 4px;
+  margin-bottom: 0.1em;          /* Slight vertical adjustment */
+  vertical-align: middle;        /* Perfectly aligns with text baseline */
+  animation: blink-caret 1s step-end infinite;
+  border-radius: 1px;
+  opacity: 1;
+}
+
+@keyframes blink-caret {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Optional: Make it more visible on hover or active page */
+header.navbar .brand:hover .logo__cursor {
+  background-color: #ffffff;     /* White on hover for extra pop */
+}
