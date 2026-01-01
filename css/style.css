@@ -99,7 +99,6 @@ nav a.active {
 }
 
 /* FORCE Gallery-page specific Instagram icon to the right side, vertically centered */
-/* Broad selectors to catch common structures (icons, links, wrappers, embeds) */
 .gallery a[href*="instagram"],
 .gallery a img[alt*="instagram" i],
 .gallery img[src*="instagram"],
@@ -114,9 +113,8 @@ nav a.active {
 .gallery iframe[src*="instagram"] {
   position: fixed !important;
   top: 50% !important;
-  right: 20px !important;
-  left: auto !important;
-  transform: translateY(-50%) !important;
+  right: 20px !important; /* Position it right */
+  transform: translateY(-50%) !important; /* Center vertically */
   z-index: 999 !important;
   width: 30px !important; /* Slightly larger for visibility */
   height: auto !important;
@@ -246,7 +244,7 @@ nav a.active {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto; /* Ensures the image is centered */
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
