@@ -1,7 +1,7 @@
 [
     {
         "title": "Killer Mountains",
-        "description": "A vibrant sunset captured in the foothills of the Himalayas.",
+        "description": "Nanga Parbat aka the killer mountain under a starry night sky.",
         "date": "2025-10-15",
         "image": "images/02.jpg"
     },
@@ -178,5 +178,17 @@
         "description": "Milky Way stretching across the night sky over a desert landscape.",
         "date": "2023-05-01",
         "image": "images/30.jpg"
+    },
+    {
+        "title": "Foggy Forest",
+        "description": "Dense fog enveloping a pine forest in the early morning.",
+        "date": "2023-04-15",
+        "image": "images/31.jpg"
+    },
+    {
+        "title": "City Sunrise",
+        "description": "Sunrise over a metropolitan skyline with vibrant colors.",
+        "date": "2023-03-05",
+        "image": "images/32.jpg"
     }
 ]
