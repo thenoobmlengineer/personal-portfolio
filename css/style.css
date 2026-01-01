@@ -29,8 +29,8 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  padding-left: 60px; /* Balance the fixed social sidebar on desktop (kept for symmetry if needed) */
-  padding-right: 60px; /* Added to balance the new right sidebar */
+  padding-left: 60px;
+  padding-right: 60px; /* Balance for right sidebar */
   position: relative;
 }
 
@@ -74,7 +74,7 @@ nav a.active {
   border-bottom: 2px solid var(--highlight-color);
 }
 
-/* Social Media Icons Styling - MOVED TO RIGHT SIDE & VERTICALLY CENTERED */
+/* Main Social Links - All pages, right side, vertically centered */
 .social-links {
   position: fixed;
   top: 50%;
@@ -96,6 +96,34 @@ nav a.active {
 .social-logo:hover {
   transform: scale(1.3);
   opacity: 1;
+}
+
+/* GALLERY-PAGE SPECIFIC Instagram Icon - Move to right side, vertically centered */
+/* Adjust the selector below if your icon uses a different class */
+.gallery-instagram,
+.instagram-gallery-link,
+.gallery .instagram-link,
+.gallery .social-links, /* fallback if it reuses the same class */
+#gallery-instagram {
+  position: fixed !important;
+  top: 50% !important;
+  right: 20px !important;
+  transform: translateY(-50%) !important;
+  left: auto !important;
+  z-index: 999;
+}
+
+/* If it's an <img> directly inside .gallery or with class containing "instagram" */
+.gallery img[src*="instagram"],
+.gallery a img[alt*="instagram" i],
+.gallery .instagram-icon {
+  position: fixed;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  width: 22px !important;
+  height: auto;
+  z-index: 999;
 }
 
 /* About Section Styling */
@@ -160,7 +188,12 @@ nav a.active {
     padding-right: 0;
   }
 
-  .social-links {
+  .social-links,
+  .gallery-instagram,
+  .instagram-gallery-link,
+  .gallery .instagram-link,
+  .gallery img[src*="instagram"],
+  .gallery .instagram-icon {
     right: 10px;
     gap: 14px;
   }
