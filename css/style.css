@@ -191,30 +191,33 @@ nav a.active {
   }
 }
 
-/* Gallery for photography */
+/* Gallery for photography - Improved centering */
 .gallery {
   display: block;
   width: 100%;
   text-align: center;
+  padding: 0 2rem;
 }
 
 .gallery-item {
-  margin: 20px 0;
-  padding: 20px;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 0;
 }
 
 .gallery-item img {
   max-width: 100%;
   height: auto;
-  margin-bottom: 10px;
-  display: block; /* Ensures images are centered */
-  margin-left: auto;
-  margin-right: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .gallery-item p {
   font-size: 1.1rem;
   color: var(--text-color);
+  margin-top: 10px;
 }
 
 /* Projects Page Styling */
@@ -238,6 +241,27 @@ nav a.active {
 .tagline {
   font-size: 1.1rem;
   color: var(--secondary-text-color);
+}
+
+/* Fix blue links in projects */
+.project-item a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.project-item .project-title a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.project-item .project-title a:hover {
+  color: var(--highlight-color);
 }
 
 /* Books & Movies Page Styling */
@@ -275,12 +299,12 @@ nav a.active {
 /* Footer Styling */
 footer {
   text-align: center;
-  padding: 1rem 2rem;  /* Slim down the footer by reducing padding */
+  padding: 1rem 2rem;
   background-color: var(--bg-color);
   font-size: 0.9rem;
   color: var(--secondary-text-color);
   width: 100%;
-  margin-top: auto;  /* Ensures footer sticks to the bottom */
+  margin-top: auto;
 }
 
 footer a {
@@ -290,12 +314,12 @@ footer a {
 /* Blinking Cursor Animation - Fixed & Improved */
 .logo__cursor {
   display: inline-block;
-  width: 3px;                    /* Thinner, more realistic cursor */
-  height: 1.4em;                 /* Matches the line height of the text (scales with font size) */
-  background-color: var(--highlight-color);  /* Use your teal accent instead of yellow for better visibility */
+  width: 3px;
+  height: 1.4em;
+  background-color: var(--highlight-color);
   margin-left: 4px;
-  margin-bottom: 0.1em;          /* Slight vertical adjustment */
-  vertical-align: middle;        /* Perfectly aligns with text baseline */
+  margin-bottom: 0.1em;
+  vertical-align: middle;
   animation: blink-caret 1s step-end infinite;
   border-radius: 1px;
   opacity: 1;
@@ -306,7 +330,6 @@ footer a {
   50% { opacity: 0; }
 }
 
-/* Optional: Make it more visible on hover or active page */
 header.navbar .brand:hover .logo__cursor {
-  background-color: #ffffff;     /* White on hover for extra pop */
+  background-color: #ffffff;
 }
