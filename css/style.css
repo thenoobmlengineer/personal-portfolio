@@ -214,3 +214,26 @@ nav a.active {
 header.navbar .brand:hover .logo__cursor {
   background-color: #ffffff;     /* White on hover for extra pop */
 }
+
+/* Gallery for photography */
+.gallery {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-item {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.gallery-item img {
+  max-width: 100%; /* Ensures images are responsive */
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.gallery-item p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
