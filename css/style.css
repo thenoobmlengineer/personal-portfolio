@@ -191,6 +191,102 @@ nav a.active {
   }
 }
 
+/* Gallery for photography */
+.gallery {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.gallery-item {
+  margin: 20px 0;
+  padding: 20px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  display: block; /* Ensures images are centered */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-item p {
+  font-size: 1.1rem;
+  color: var(--text-color);
+}
+
+/* Projects Page Styling */
+.project-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted var(--border-color);
+}
+
+.project-item .project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-item .project-date {
+  float: right;
+  color: var(--secondary-text-color);
+  font-size: 0.85rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+/* Books & Movies Page Styling */
+.media-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.media-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted var(--border-color);
+}
+
+.media-item img {
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.media-item h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.media-item span.type {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: var(--highlight-color);
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 1rem 2rem;  /* Slim down the footer by reducing padding */
+  background-color: var(--bg-color);
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+  width: 100%;
+  margin-top: auto;  /* Ensures footer sticks to the bottom */
+}
+
+footer a {
+  color: var(--highlight-color);
+}
+
 /* Blinking Cursor Animation - Fixed & Improved */
 .logo__cursor {
   display: inline-block;
@@ -213,27 +309,4 @@ nav a.active {
 /* Optional: Make it more visible on hover or active page */
 header.navbar .brand:hover .logo__cursor {
   background-color: #ffffff;     /* White on hover for extra pop */
-}
-
-/* Gallery for photography */
-.gallery {
-  display: block;
-  width: 100%;
-  text-align: center;
-}
-
-.gallery-item {
-  margin: 20px 0;
-  padding: 20px;
-}
-
-.gallery-item img {
-  max-width: 100%; /* Ensures images are responsive */
-  height: auto;
-  margin-bottom: 10px;
-}
-
-.gallery-item p {
-  font-size: 1.1rem;
-  color: var(--text-color);
 }
