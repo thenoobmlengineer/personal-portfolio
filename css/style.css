@@ -98,32 +98,35 @@ nav a.active {
   opacity: 1;
 }
 
-/* GALLERY-PAGE SPECIFIC Instagram Icon - Move to right side, vertically centered */
-/* Adjust the selector below if your icon uses a different class */
-.gallery-instagram,
-.instagram-gallery-link,
+/* FORCE Gallery-page specific Instagram icon to the right side, vertically centered */
+/* Broad selectors to catch common structures (icons, links, wrappers, embeds) */
+.gallery a[href*="instagram"],
+.gallery a img[alt*="instagram" i],
+.gallery img[src*="instagram"],
+.gallery .instagram,
+.gallery .ig,
+.gallery .insta,
+.gallery .instagram-icon,
 .gallery .instagram-link,
-.gallery .social-links, /* fallback if it reuses the same class */
-#gallery-instagram {
+.gallery .instagram-button,
+.gallery .social-instagram,
+.gallery div[class*="instagram"],
+.gallery iframe[src*="instagram"] {
   position: fixed !important;
   top: 50% !important;
   right: 20px !important;
-  transform: translateY(-50%) !important;
   left: auto !important;
-  z-index: 999;
+  transform: translateY(-50%) !important;
+  z-index: 999 !important;
+  width: 30px !important; /* Slightly larger for visibility */
+  height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
-/* If it's an <img> directly inside .gallery or with class containing "instagram" */
-.gallery img[src*="instagram"],
-.gallery a img[alt*="instagram" i],
-.gallery .instagram-icon {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  width: 22px !important;
-  height: auto;
-  z-index: 999;
+/* If it's a container with multiple elements, stack vertically below main icons */
+.gallery a[href*="instagram"] {
+  margin-top: 50px !important; /* Space it below the main social links if needed */
 }
 
 /* About Section Styling */
@@ -189,13 +192,9 @@ nav a.active {
   }
 
   .social-links,
-  .gallery-instagram,
-  .instagram-gallery-link,
-  .gallery .instagram-link,
-  .gallery img[src*="instagram"],
-  .gallery .instagram-icon {
-    right: 10px;
-    gap: 14px;
+  .gallery a[href*="instagram"],
+  .gallery img[src*="instagram"] {
+    right: 10px !important;
   }
 
   .social-logo {
