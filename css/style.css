@@ -29,7 +29,9 @@ body {
   color: var(--text-color);
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
-  padding-left: 60px; /* Balance the fixed social sidebar on desktop */
+  padding-left: 60px; /* Balance the fixed social sidebar on desktop (kept for symmetry if needed) */
+  padding-right: 60px; /* Added to balance the new right sidebar */
+  position: relative;
 }
 
 /* Navigation bar */
@@ -72,30 +74,33 @@ nav a.active {
   border-bottom: 2px solid var(--highlight-color);
 }
 
-/* Social Media Icons Styling */
+/* Social Media Icons Styling - MOVED TO RIGHT SIDE & VERTICALLY CENTERED */
 .social-links {
   position: fixed;
-  top: 100px;
-  left: 20px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 18px;
   z-index: 999;
 }
 
 .social-logo {
-  width: 20px;
+  width: 22px;
   height: auto;
   transition: transform 0.3s ease;
+  opacity: 0.8;
 }
 
 .social-logo:hover {
-  transform: scale(1.2);
+  transform: scale(1.3);
+  opacity: 1;
 }
 
 /* About Section Styling */
 #about {
-  margin: 12rem 0 6rem; /* Increased top margin to push the section down */
+  margin: 12rem 0 6rem;
   padding: 2rem 0;
   width: 100%;
 }
@@ -108,7 +113,7 @@ nav a.active {
   max-width: 1000px;
   margin: 0 auto;
   flex-wrap: wrap;
-  padding: 0 2rem; /* Added padding to the left and right for better spacing */
+  padding: 0 2rem;
 }
 
 .about-image {
@@ -152,20 +157,20 @@ nav a.active {
 @media (max-width: 768px) {
   body {
     padding-left: 0;
+    padding-right: 0;
   }
 
   .social-links {
-    top: 80px;
-    left: 10px;
-    gap: 12px;
+    right: 10px;
+    gap: 14px;
   }
 
   .social-logo {
-    width: 18px;
+    width: 20px;
   }
 
   #about {
-    margin: 8rem 0 4rem; /* Still lower on mobile, but not extreme */
+    margin: 8rem 0 4rem;
     padding: 1rem;
   }
 
@@ -173,7 +178,7 @@ nav a.active {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    padding: 0; /* Remove additional padding on mobile */
+    padding: 0;
   }
 
   .about-text {
@@ -311,7 +316,7 @@ footer a {
   color: var(--highlight-color);
 }
 
-/* Blinking Cursor Animation - Fixed & Improved */
+/* Blinking Cursor Animation */
 .logo__cursor {
   display: inline-block;
   width: 3px;
