@@ -12,5 +12,12 @@
     "director": "Christopher Nolan",
     "year": 2010,
     "description": "A mind‑bending sci‑fi thriller exploring dreams within dreams."
+  },
+  {
+    "type": "Movie",
+    "title": "Arrival",
+    "director": "Denis Villeneuve",
+    "year": 2016,
+    "description": "Movies about first contact with aliens, focusing on communication and understanding."
   }
 ]
