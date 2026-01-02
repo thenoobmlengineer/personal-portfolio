@@ -112,11 +112,11 @@ nav a.active {
 .gallery div[class*="instagram"],
 .gallery iframe[src*="instagram"] {
   position: fixed !important;
-  top: 50% !important;
-  right: 20px !important; /* Position it right */
+  top: 10% !important;
+  right: 200px !important; /* Position it right */
   transform: translateY(-50%) !important; /* Center vertically */
   z-index: 999 !important;
-  width: 30px !important; /* Slightly larger for visibility */
+  width: 20px !important; /* Slightly larger for visibility */
   height: auto !important;
   margin: 0 !important;
   padding: 0 !important;
