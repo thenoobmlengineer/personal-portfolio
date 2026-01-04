@@ -51,6 +51,7 @@ header.navbar .brand {
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--highlight-color);
+  text-decoration: none;  /* Remove underline from the brand */
 }
 
 nav ul {
@@ -65,13 +66,16 @@ nav a {
   color: var(--secondary-text-color);
   font-weight: 500;
   padding-bottom: 0.25rem;
-  text-decoration: none;
+  text-decoration: none;  /* Ensure no underline by default */
 }
 
-nav a:hover,
 nav a.active {
+  border-bottom: 2px solid var(--highlight-color); /* Underline only the active link */
   color: var(--text-color);
-  border-bottom: 2px solid var(--highlight-color);
+}
+
+nav a:hover {
+  color: var(--text-color);  /* Highlight color on hover */
 }
 
 /* Main Social Links - All pages, right side, vertically centered */
@@ -98,33 +102,28 @@ nav a.active {
   opacity: 1;
 }
 
-/* FORCE Gallery-page specific Instagram icon to the right side, vertically centered */
-.gallery a[href*="instagram"],
-.gallery a img[alt*="instagram" i],
-.gallery img[src*="instagram"],
-.gallery .instagram,
-.gallery .ig,
-.gallery .insta,
-.gallery .instagram-icon,
-.gallery .instagram-link,
-.gallery .instagram-button,
-.gallery .social-instagram,
-.gallery div[class*="instagram"],
-.gallery iframe[src*="instagram"] {
-  position: fixed !important;
-  top: 10% !important;
-  right: 200px !important; /* Position it right */
-  transform: translateY(-50%) !important; /* Center vertically */
-  z-index: 999 !important;
-  width: 20px !important; /* Slightly larger for visibility */
-  height: auto !important;
-  margin: 0 !important;
-  padding: 0 !important;
+/* Blinking Cursor Animation with Fade Effect */
+.logo__cursor {
+  display: inline-block;
+  width: 3px;
+  height: 1.4em;
+  background-color: var(--highlight-color);
+  margin-left: 4px;
+  margin-bottom: 0.1em;
+  vertical-align: middle;
+  animation: blink-caret 1.5s ease-in-out infinite;
+  border-radius: 1px;
+  opacity: 1;
 }
 
-/* If it's a container with multiple elements, stack vertically below main icons */
-.gallery a[href*="instagram"] {
-  margin-top: 50px !important; /* Space it below the main social links if needed */
+@keyframes blink-caret {
+  0% { opacity: 0; }
+  50% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+header.navbar .brand:hover .logo__cursor {
+  background-color: #ffffff;
 }
 
 /* About Section Styling */
@@ -182,50 +181,6 @@ nav a.active {
   margin-bottom: 1rem;
 }
 
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  body {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .social-links,
-  .gallery a[href*="instagram"],
-  .gallery img[src*="instagram"] {
-    right: 10px !important;
-  }
-
-  .social-logo {
-    width: 20px;
-  }
-
-  #about {
-    margin: 8rem 0 4rem;
-    padding: 1rem;
-  }
-
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 2rem;
-    padding: 0;
-  }
-
-  .about-text {
-    text-align: center;
-  }
-
-  .about-img {
-    width: 280px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .about-container {
-    gap: 4rem;
-  }
-}
-
 /* Gallery for photography - Improved centering */
 .gallery {
   display: block;
@@ -244,7 +199,7 @@ nav a.active {
   max-width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto; /* Ensures the image is centered */
+  margin: 0 auto;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
@@ -254,52 +209,6 @@ nav a.active {
   color: var(--text-color);
   margin-top: 10px;
 }
-
-/* Projects Page Styling */
-.project-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dotted var(--border-color);
-}
-
-.project-item .project-title {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.project-item .project-date {
-  float: right;
-  color: var(--secondary-text-color);
-  font-size: 0.85rem;
-}
-
-.tagline {
-  font-size: 1.1rem;
-  color: var(--secondary-text-color);
-}
-
-/* Fix blue links in projects */
-.project-item a {
-  color: var(--accent-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.project-item a:hover {
-  color: var(--text-color);
-  text-decoration: underline;
-}
-
-.project-item .project-title a {
-  color: inherit;
-  font-weight: 600;
-}
-
-.project-item .project-title a:hover {
-  color: var(--highlight-color);
-}
-
-
 
 /* Footer Styling */
 footer {
@@ -314,27 +223,4 @@ footer {
 
 footer a {
   color: var(--highlight-color);
-}
-
-/* Blinking Cursor Animation */
-.logo__cursor {
-  display: inline-block;
-  width: 8px;
-  height: 1em;
-  background-color: var(--highlight-color);
-  margin-left: 4px;
-  margin-bottom: 0.1em;
-  vertical-align: middle;
-  animation: blink-caret 1.5s step-end infinite;
-  border-radius: 1px;
-  opacity: 1;
-}
-
-@keyframes blink-caret {
-  from, to { opacity: 1; }
-  50% { opacity: 0; }
-}
-
-header.navbar .brand:hover .logo__cursor {
-  background-color: #ffffff;
 }
