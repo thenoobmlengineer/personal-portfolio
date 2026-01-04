@@ -325,7 +325,7 @@ footer a {
   margin-left: 4px;
   margin-bottom: 0.1em;
   vertical-align: middle;
-  animation: blink-caret 2s step-end infinite;
+  animation: blink-caret 1.5s step-end infinite;
   border-radius: 1px;
   opacity: 1;
 }
