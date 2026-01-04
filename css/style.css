@@ -8,6 +8,7 @@
   --border-color: #444444; /* Dark gray (borders and dividers) */
   --accent-color: #888888; /* Soft gray (accents like links) */
   --highlight-color: #76ABAE; /* Teal (minimal usage for highlights) */
+  --cursor-color: #FFCC00; /* New: Custom cursor color (yellow) */
 }
 
 /* Reset Body and HTML */
@@ -51,7 +52,7 @@ header.navbar .brand {
   font-weight: 700;
   font-size: 1.25rem;
   color: var(--highlight-color);
-  text-decoration: none;  /* Remove underline from the brand */
+  text-decoration: none;
 }
 
 nav ul {
@@ -66,16 +67,16 @@ nav a {
   color: var(--secondary-text-color);
   font-weight: 500;
   padding-bottom: 0.25rem;
-  text-decoration: none;  /* Ensure no underline by default */
+  text-decoration: none;
 }
 
 nav a.active {
-  border-bottom: 2px solid var(--highlight-color); /* Underline only the active link */
+  border-bottom: 2px solid var(--highlight-color);
   color: var(--text-color);
 }
 
 nav a:hover {
-  color: var(--text-color);  /* Highlight color on hover */
+  color: var(--text-color);
 }
 
 /* Main Social Links - All pages, right side, vertically centered */
@@ -102,16 +103,16 @@ nav a:hover {
   opacity: 1;
 }
 
-/* Blinking Cursor Animation with Fade Effect */
+/* Blinking Cursor - Now using #FFCC00 */
 .logo__cursor {
   display: inline-block;
   width: 3px;
   height: 1.4em;
-  background-color: var(--highlight-color);
+  background-color: var(--cursor-color); /* Changed to #FFCC00 */
   margin-left: 4px;
   margin-bottom: 0.1em;
   vertical-align: middle;
-  animation: blink-caret 1.5s ease-in-out infinite;
+  animation: blink-caret 1s ease-in-out infinite;
   border-radius: 1px;
   opacity: 1;
 }
@@ -122,6 +123,7 @@ nav a:hover {
   100% { opacity: 0; }
 }
 
+/* Hover effect: white cursor when hovering over name */
 header.navbar .brand:hover .logo__cursor {
   background-color: #ffffff;
 }
@@ -181,7 +183,48 @@ header.navbar .brand:hover .logo__cursor {
   margin-bottom: 1rem;
 }
 
-/* Gallery for photography - Improved centering */
+/* Skills Section - Centered Content Fix */
+#skills,
+.skills-section,
+section#skills,
+div.skills {
+  width: 100%;
+  max-width: 1000px;
+  margin: 6rem auto;
+  padding: 2rem;
+  text-align: center; /* Ensures all text is centered */
+}
+
+#skills h2,
+.skills-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.skills-list,
+#skills ul,
+#skills .skill-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.skills-list li,
+#skills li {
+  background-color: rgba(118, 171, 174, 0.1);
+  padding: 0.8rem 1.5rem;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Gallery for photography */
 .gallery {
   display: block;
   width: 100%;
@@ -210,6 +253,49 @@ header.navbar .brand:hover .logo__cursor {
   margin-top: 10px;
 }
 
+/* Projects Page Styling */
+.project-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted var(--border-color);
+}
+
+.project-item .project-title {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.project-item .project-date {
+  float: right;
+  color: var(--secondary-text-color);
+  font-size: 0.85rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--secondary-text-color);
+}
+
+.project-item a {
+  color: var(--highlight-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.project-item a:hover {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+.project-item .project-title a {
+  color: inherit;
+  font-weight: 600;
+}
+
+.project-item .project-title a:hover {
+  color: var(--highlight-color);
+}
+
 /* Footer Styling */
 footer {
   text-align: center;
@@ -223,4 +309,57 @@ footer {
 
 footer a {
   color: var(--highlight-color);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .social-links {
+    right: 10px;
+  }
+
+  .social-logo {
+    width: 20px;
+  }
+
+  #about {
+    margin: 8rem 0 4rem;
+    padding: 1rem;
+  }
+
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    padding: 0;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-img {
+    width: 280px;
+  }
+
+  /* Ensure skills remain centered on mobile */
+  #skills,
+  .skills-section {
+    padding: 1rem;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-container {
+    gap: 4rem;
+  }
 }
