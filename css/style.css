@@ -299,37 +299,7 @@ nav a.active {
   color: var(--highlight-color);
 }
 
-/* Books & Movies Page Styling */
-.media-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
 
-.media-item {
-  margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px dotted var(--border-color);
-}
-
-.media-item img {
-  width: 100%;
-  height: auto;
-  max-width: 300px;
-  margin: 0 auto;
-}
-
-.media-item h3 {
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.media-item span.type {
-  font-weight: bold;
-  margin-right: 0.5rem;
-  color: var(--highlight-color);
-}
 
 /* Footer Styling */
 footer {
@@ -349,13 +319,13 @@ footer a {
 /* Blinking Cursor Animation */
 .logo__cursor {
   display: inline-block;
-  width: 3px;
-  height: 1.4em;
+  width: 8px;
+  height: 1em;
   background-color: var(--highlight-color);
   margin-left: 4px;
   margin-bottom: 0.1em;
   vertical-align: middle;
-  animation: blink-caret 1s step-end infinite;
+  animation: blink-caret 2s step-end infinite;
   border-radius: 1px;
   opacity: 1;
 }
